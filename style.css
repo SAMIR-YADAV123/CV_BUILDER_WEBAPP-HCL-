@@ -8,6 +8,33 @@
     -webkit-print-color-adjust: exact;
   }
 }
+
+ @media (max-width:550px)
+ {
+  .sbtbtn{
+    width: 120px;
+  width: 5%;
+  background: linear-gradient(to right,#2b151c,#ffad06);
+  border-radius: 5px;
+  border: none;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 10px;
+  display: block;
+  transform: translate(60px,10px);
+   
+  line-height: 1.2rem;
+     font-family: tahoma;
+     margin-top: 1px;
+     margin-right: 50px;
+     position:absolute;
+     /* top: 40px; */
+     right:3%;
+     bottom: 40px;
+   }
+}  
+
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
@@ -41,8 +68,6 @@ body {
   overflow: hidden;
   box-shadow: 0px 0px 10px rgb(108, 189, 198);
 }
-
-
 
 
 .grid-container .zone-1 {
@@ -85,18 +110,24 @@ body {
   margin-top: 35px;
 }
 .grid-container .zone-1 .personal-box > *:not(.title) {
-  margin: 25px 0px;
-  grid-template-columns: 0.55fr 1fr;
+  margin: 15px 0px;
+  grid-template-columns: 0.3fr 0.4fr 1fr;
   display: grid;
 }
-.grid-container .zone-1 .personal-box .progress .dot {
+
+.grid-container .zone-2 .group-2 .desc .skill-1 {
+  margin: 15px 0px;
+  grid-template-columns:  0.55fr 0.55fr 1fr;
+  display: grid;
+}
+/* .grid-container .zone-1 .personal-box .progress .dot {
   display: inline-block;
   width: 10px;
   height: 10px;
   background-color: #313131;
   border-radius: 50%;
   margin-left: 4px;
-}
+} */
 .margin-20
 {
   margin-left: 20px;
@@ -124,15 +155,15 @@ li::marker
   height: 10px;
   background-color: #3f9ea5;
   border-radius: 50%;
-  margin-right: 35px;
+  margin-right: 5px;
 }
 .circleSk{
   display: block;
   width: 10px;
   height: 10px;
-  background-color: #9db858;
+  background-color: #3f9ea5;
   border-radius: 50%;
-  margin-right:2px;
+  margin-right:20px;
 }
 .skset{
    margin-left: 50px;
@@ -246,7 +277,7 @@ li::marker
   top: 30px;
   left: -18px;
   height: 100px;
-  border-left: 2px solid #3f9ea5;
+   border-left: 2px solid #3f9ea5;
 }
 .grid-container .zone-2 .group-3 .desc ul:last-of-type li:before {
   content: none;
@@ -297,8 +328,8 @@ li::marker
 
 
 .sbtbtn{
-  width: 120px;
-  width: 11%;
+  width: 130px;
+  /* width: 11%; */
   background: linear-gradient(to right,#ff105f,#ffad06);
   border-radius: 5px;
   border: none;
@@ -308,36 +339,15 @@ li::marker
   display: block;
   transform: translate(60px,10px);
    
-  line-height: 1.2rem;
+  line-height: 1.2rem; 
      font-family: tahoma;
      margin-top: 1px;
-     margin-right: 50px;
+     margin-right: 50px; 
      position:absolute;
-     top: 40px;
+     bottom:40px;
      right:3%;
      
 }
-/* .btbtn{
-  width: 120px;
-  width: 11%;
-  background: linear-gradient(to right,#ff105f,#ffad06);
-  border-radius: 5px;
-  border: none;
-  padding: 8px 10px;
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
-  transform: translate(60px,10px);
-   
-  line-height: 1.2rem;
-     font-family: tahoma;
-     margin-top: 1px;
-     margin-right: 50px;
-     position:absolute;
-     top: 85px;
-     right:3%;
-     
-} */
 
 #edu{
   color: #3f9ea5;
@@ -349,3 +359,8 @@ li::marker
   font-weight: normal;
   font-size: 14px;
 }
+
+/* .scolor{
+  color:#3f9ea5;
+  font-weight: bold;
+} */

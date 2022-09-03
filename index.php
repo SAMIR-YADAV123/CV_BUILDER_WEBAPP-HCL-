@@ -56,7 +56,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Phone number</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="0300-1234567" pattern="[0-9]{4}-[0-9]{7}" required>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="03001234567" required>
                 </div>
                 <div>
                         <label class="form-label">LinkDin</label>
@@ -149,6 +149,17 @@
                 </div>
             </div>
             <div class="border border-dark p-3 mb-3">    
+                <h2>Languages</h2>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">language</label>
+                    <input type="text" name="lang1" class="form-control" required>
+                </div>
+                <div id="addlang"></div>
+                <div class="mb-3">
+                    <button type="button" id="lang_hide" class="btn btn-primary form-control" onclick="addLange()">+</button>
+                </div>
+            </div>
+            <div class="border border-dark p-3 mb-3">    
                 <h2>Hobbies</h2>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Hobby</label>
@@ -159,6 +170,10 @@
                     <button type="button" id="hobby_hide" class="btn btn-primary form-control" onclick="addHobby()">+</button>
                 </div>
             </div>
+
+           
+
+
             <input type="submit" class="form-control my-2">
         </form>
     </div>

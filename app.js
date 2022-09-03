@@ -1,5 +1,6 @@
 var skill_count=1;
 var hobby_count=1;
+var lang_count=1;
 var education_count=1;
 var experience_count=1;
 var project_count=1;
@@ -10,27 +11,7 @@ function Download(){
        down.style.visibility="visible";
        window.alert("Download successfully");
    }
-//    function Download(){
-//     var down=document.getElementById('pos1');
-//     down.style.visibility="hidden";
-//    var eml=document.getElementById('eml')
-//     function sendEmail() {
-//         Email.send({
-//         Host: "eml",
-//         Username : "<sender’s email address>",
-//         Password : "<email password>",
-//         To : '<recipient’s email address>',
-//         From : "<sender’s email address>",
-//         Subject : "<email subject>",
-//         Body : "<email body>",
-//         }).then(
-//             message => alert("mail sent successfully")
-//         );
-//     }
 
-
-//     down.style.visibility="visible";
-// }
 function addSkill(){
     let addSkill = document.getElementById('addSkill');
     let skillHide = document.getElementById('skill_hide');
@@ -81,6 +62,28 @@ function addHobby(){
         hobbyHide.style = "display:none";
     }
 }
+
+function addLange(){
+    let addHobby = document.getElementById('addlang');
+    let hobbyHide = document.getElementById('lang_hide');
+    if(lang_count<4)
+    {
+        ++lang_count;
+        var field = 
+        `<div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">language</label>
+            <input type="text" name="lang${lang_count}" class="form-control">
+        </div>`;
+        var htmlObject = document.createElement('div');
+        htmlObject.innerHTML=field;
+        addHobby.insertAdjacentElement("beforeend", htmlObject);
+    }
+    if(lang_count==4)
+    {
+        hobbyHide.style = "display:none";
+    }
+}
+
 function addEducation(){
     let addEducation = document.getElementById('addEducation');
     let educationHide = document.getElementById('education_hide');

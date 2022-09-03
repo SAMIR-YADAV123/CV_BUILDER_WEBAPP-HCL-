@@ -3,6 +3,7 @@
   $skills = [];
   $skill_levels = [];
   $hobbies = [];
+  $languages = [];
   $institutes = [];
   $degrees = [];
   $froms = [];
@@ -28,6 +29,7 @@
     array_push($skills,$_POST['skill1']);
     array_push($skill_levels,intval($_POST['skill_level1']));
     array_push($hobbies,$_POST['hobby1']);
+    array_push($languages,$_POST['lang1']);
     array_push($institutes,$_POST['institute1']);
     array_push($degrees,$_POST['degree1']);
     array_push($froms,$_POST['from1']);
@@ -82,6 +84,23 @@
     {
       array_push($hobbies,$_POST['hobby4']);
     }
+
+
+    if(isset($_POST['lang2']) && !empty($_POST['lang2']))
+    {
+      array_push($languages,$_POST['lang2']);
+    }
+    if(isset($_POST['lang3']) && !empty($_POST['lang3']))
+    {
+      array_push($languages,$_POST['lang3']);
+    }
+    if(isset($_POST['lang4']) && !empty($_POST['lang4']))
+    {
+      array_push($languages,$_POST['lang4']);
+    }
+
+
+
     if(isset($_POST['institute2']) && !empty($_POST['institute2']))
     {
       if(isset($_POST['degree2']) && !empty($_POST['degree2']))
@@ -187,6 +206,13 @@
     <div class="toCenter">
       <img src="images/<?php echo $profile;?>" class="profile">
     </div>
+    <div class="headTitle">
+      <h1><?php echo ucwords($first_name);?>&nbsp<b><?php echo ucwords($last_name);?></b></h1>
+    </div>
+    <!-- <div class="subTitle">
+      <h1><?php echo ucwords($profession);?><h1>
+    </div> -->
+
     <div class="contact-box">
       <div class="title">
         <h2>Contact</h2>
@@ -206,26 +232,26 @@
         <div class="text"><a target="_blank" href="{$linkdin}"><?php echo $linkdin;?></a></div>
       </div>
     </div>
-    <div class="personal-box">
+    <!-- <div class="personal-box">
       <div class="title">
         <h2>Skills</h2>
         <hr style="background-color:black">
       </div>
       <?php 
-      for($j=0; $j<count($skills); $j++){
-          echo "<div class='skill-1'>
-          
-                  <p ><strong>" . strtoupper($skills[$j]) . "</strong></p>
-                  <div class='progress'>";
+      // for($j=0; $j<count($skills); $j++){
+      //     echo "<div class='skill-1'>
+             
+      //             <p><strong>" . strtoupper($skills[$j]) . "</strong></p>
+      //             <div class='progress'>";
                   
-            for($i=0;$i<$skill_levels[$j];$i++){
-              echo '<div class="fas fa-star active"></div>';              
-            }
-            echo '</div></div>';
+      //       for($i=0;$i<$skill_levels[$j];$i++){
+      //         echo '<div class="fas fa-star active"></div>';              
+      //       }
+      //       echo '</div></div>';
 
-          }
+      //     }
       ?>
-    </div>
+    </div> -->
     <div class="hobbies-box">
       <div class="title">
         <h2>Hobbies</h2>
@@ -243,14 +269,25 @@
       
       ?>
     </div>
+    <div class="hobbies-box">
+      <div class="title">
+        <h2>Language</h2>
+        <hr style="background-color:black">
+      </div>
+      <?php 
+        foreach($languages as $lang)
+        {
+          echo "<div class='d-flex align-items-center'>
+          <div class='circle'></div>
+          <div><strong>" . ucwords($lang) . "</strong></div>
+        </div>";
+        }
+      ?>
+    </div>
   </div>
+
+  
   <div class="zone-2">
-    <div class="headTitle">
-      <h1><?php echo ucwords($first_name);?><br><b><?php echo ucwords($last_name);?></b></h1>
-    </div>
-    <div class="subTitle">
-      <h1><?php echo ucwords($profession);?><h1>
-    </div>
     <div class="group-1">
       <div class="title">
         <div class="box">
@@ -280,6 +317,62 @@
         ?>
       </div>
     </div>
+
+
+    <div class="group-2">
+      <div class="title">
+        <div class="box">
+          <h2>Skill</h2>
+        </div>
+      </div>
+      <div class="desc">
+      <?php 
+      for($j=0; $j<count($skills); $j++){
+          // echo "<div class='skill-1'>
+          //       <ul>
+          //       <li>
+          //       <div class='msg-1'></div>
+          //         <div class='msg-2'><strong>" . strtoupper($skills[$j]) . "</strong></div>
+          //         <div class='progress'>";
+                  
+          //   for($i=0;$i<$skill_levels[$j];$i++){
+          //     echo '<div class=" fas fa-star active"></div>';              
+          //   }
+          //   echo '</div>
+          //   </li>
+          //   </ul>
+          //   </div>';
+
+          echo "
+              <ul>
+          <li>
+            <div class='msg-1'></div>
+            <div id='edu' class='msg-2'>" . strtoupper($skills[$j]) ."</div>
+            <div class='msg-3'></div>
+          </li>
+        </ul>";
+          }
+   
+        // echo "<div>
+        //        <ul>
+        //      <li>
+        //        <div class='msg-1'></div>
+        //       <div id='edu' class='msg-2'>" . strtoupper($skills[$j]) ."</div>
+        //       <div class='msg-3'>
+        //     </li>";
+         
+        //   for($i=0;$i<$skill_levels[$j];$i++){
+        //         echo '<div class=" fas fa-star active"></div>';              
+        //       };
+              
+        //       echo "</ul></div>";
+          // }
+      ?>
+      </div>
+    </div>
+    
+
+
     <div class="group-3">
       <div class="title">
         <div class="box">

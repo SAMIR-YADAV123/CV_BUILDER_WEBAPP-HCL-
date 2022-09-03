@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Generator</title>
+    <title>Resume Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <style>
         body{
-            background: linear-gradient(to right,#228082,#f5cd88);
+            /* background: linear-gradient(to right,#228082,#f5cd88); */
+             background:#3f9ea5;
         }
     </style>
 </head>
@@ -23,7 +24,7 @@
             <div class="border border-dark p-3 mb-3">    
                 <h2>Profile Image</h2>
                 <div class="mb-3">
-                    <label class="form-label">Select a square image 1:1 (Recommended)</label>
+                    <label class="form-label">Select a square image</label>
                     <input class="form-control" name="profile_image" type="file" required>
                 </div>
             </div>

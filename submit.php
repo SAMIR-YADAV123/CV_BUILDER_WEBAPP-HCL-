@@ -191,7 +191,7 @@
   <title><?php echo ucwords($first_name). ' Resume'; ?></title>
 </head>
 <body>
-  <button class="sbtbtn" id="pos" onclick="Download()">Download</button>
+  
   
   
   <!-- <a href="mailto:${$email}"
@@ -418,7 +418,9 @@
     </div>
         
   </div>
+  <button class="sbtbtn" id="pos" onclick="Download()">Download</button>
 </div>
+<!-- <button class="sbtbtn" id="pos" onclick="Download()">Download</button> -->
 <script src="app.js"></script>
 </body>
 </html>

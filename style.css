@@ -361,8 +361,8 @@ li::marker
      margin-top: 200px;
      margin-top: 90%; 
       position:absolute; 
-      bottom:0%;
-     right: -10%;  
+      /* bottom:0%; */
+     right: -15%;  
  } 
 
 

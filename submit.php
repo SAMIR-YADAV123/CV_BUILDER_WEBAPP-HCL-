@@ -191,7 +191,7 @@
   <title><?php echo ucwords($first_name). ' Resume'; ?></title>
 </head>
 <body>
-  
+  <button class="sbtbtn" id="pos" onclick="Download()">Download</button>
   
   
   <!-- <a href="mailto:${$email}"
@@ -353,20 +353,6 @@
         </ul>";
           }
    
-        // echo "<div>
-        //        <ul>
-        //      <li>
-        //        <div class='msg-1'></div>
-        //       <div id='edu' class='msg-2'>" . strtoupper($skills[$j]) ."</div>
-        //       <div class='msg-3'>
-        //     </li>";
-         
-        //   for($i=0;$i<$skill_levels[$j];$i++){
-        //         echo '<div class=" fas fa-star active"></div>';              
-        //       };
-              
-        //       echo "</ul></div>";
-          // }
       ?>
       </div>
     </div>
@@ -417,10 +403,9 @@
       </div>
     </div>
         
-  </div>
-  <button class="sbtbtn" id="pos" onclick="Download()">Download</button>
-</div>
-<!-- <button class="sbtbtn" id="pos" onclick="Download()">Download</button> -->
+     </div>
+   </div>
+  </div> 
 <script src="app.js"></script>
 </body>
 </html>

@@ -327,10 +327,10 @@ li::marker
 }
 
 
-.sbtbtn{
+/* .sbtbtn{ */
   /* width: 50px; */
-  width: 11%;
-  background: linear-gradient(to right,#ff105f,#ffad06);
+  /* width: 11%; */
+  /* background: linear-gradient(to right,#ff105f,#ffad06);
    border-radius: 20px;
   border: none;
   padding: 8px 5px; 
@@ -344,9 +344,32 @@ li::marker
      margin-right: 50px; 
       position:absolute; 
       bottom:3%;
-     right:5px; 
+     right:5px;  */
      
-}
+/* } */
+
+.grid-container .zone-2 .sbtbtn{ 
+  width: 50px;
+  /* width: 11%; */
+  background: linear-gradient(to right,#ff105f,#ffad06);
+   border-radius: 10px;
+  border: none;
+  padding: 8px 5px; 
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  transform: translate(60px,10px);
+  line-height: 1.2rem; 
+     font-family: tahoma;
+     margin-top: 400px;
+     margin-right: 50px; 
+      position:absolute; 
+      /* bottom:2%; */
+     /* right:10%;  */
+     
+ }
+
+
 
 #edu{
   color: #3f9ea5;

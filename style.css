@@ -343,8 +343,8 @@ li::marker
      margin-top: 1px;
      margin-right: 50px; 
       position:absolute; 
-      bottom:5%;
-     right:3%; 
+      bottom:3%;
+     right:5px; 
      
 }
 

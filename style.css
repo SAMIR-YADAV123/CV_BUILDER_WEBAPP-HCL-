@@ -346,7 +346,7 @@ li::marker
 /* } */
 
 .grid-container .zone-2 .sbtbtn{ 
-  /* width: 50px; */
+  width: 50px;
   width: 11%;
   background: linear-gradient(to right,#ff105f,#ffad06);
    border-radius: 10px;
@@ -360,10 +360,10 @@ li::marker
      font-family: tahoma;
      margin-right: 80px; 
      /* margin-top: 200px; */
-     margin-top: 60%;
+     margin-top: 90%;
       position:absolute; 
       /* bottom:0%; */
-     right:1%;  
+     right:0%;  
  }
 
 

@@ -324,10 +324,10 @@ li::marker
 }
 
 
-/* .sbtbtn{ */
-  /* width: 50px; */
-  /* width: 11%; */
-  /* background: linear-gradient(to right,#ff105f,#ffad06);
+/* .sbtbtn{ 
+  width: 50px;
+  width: 11%;
+   background: linear-gradient(to right,#ff105f,#ffad06); 
    border-radius: 20px;
   border: none;
   padding: 8px 5px; 
@@ -337,13 +337,12 @@ li::marker
   transform: translate(60px,10px);
   line-height: 1.2rem; 
      font-family: tahoma;
-     margin-top: 1px;
+     margin-top: 30px;
      margin-right: 50px; 
       position:absolute; 
-      bottom:3%;
-     right:5px;  */
+     right:30px;  
      
-/* } */
+ } */
 
 .grid-container .zone-2 .sbtbtn{ 
   width: 50px;
@@ -359,12 +358,12 @@ li::marker
   line-height: 1.2rem; 
      font-family: tahoma;
      margin-right: 80px; 
-     /* margin-top: 200px; */
-     margin-top: 90%;
+     margin-top: 200px;
+     margin-top: 90%; 
       position:absolute; 
-      /* bottom:0%; */
-     right: -10%;  
- }
+      bottom:-5%;
+     right: -20%;  
+ } 
 
 
 

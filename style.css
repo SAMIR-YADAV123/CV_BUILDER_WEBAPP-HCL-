@@ -359,10 +359,10 @@ li::marker
      font-family: tahoma;
      margin-right: 80px; 
      margin-top: 200px;
-     margin-top: 90%; 
+     margin-top: 95%; 
       position:absolute; 
       /* bottom:0%; */
-     right: -15%;  
+     right: -20%;  
  } 
 
 
